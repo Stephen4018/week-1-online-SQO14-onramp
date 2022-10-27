@@ -1,0 +1,15 @@
+.hero-section {
+  background: rgb(215, 245, 245);
+  .hero-section-inner {
+    margin-inline: 5rem;
+
+    .inner-section-cards {
+      .card-1 {
+        background: white;
+        .card-head {
+          display: flex;
+        }
+      }
+    }
+  }
+}
