@@ -1,17 +1,27 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .hero-section {
   background: rgb(215, 245, 245);
+  padding-block: 5rem;
   .hero-section-inner {
     margin-inline: 5rem;
+
+    .hero-header {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
 
     .inner-section-cards {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      //   justify-content: space-between;
       gap: 2rem;
       .card-1 {
         background: white;
         padding: 1.5rem;
         border-radius: 10px;
+        height: fit-content;
         .card-head {
           display: flex;
           justify-content: space-between;
@@ -29,13 +39,45 @@
               }
             }
             .card-name {
-              display: flex;
-              flex-direction: column;
-              //   gap: -10rem;
-              .bold {
-                font-weight: 600;
-                font-size: 1rem;
+              margin-top: -1rem;
+              .light {
+                margin-top: -2rem;
+                font-weight: 200;
+                color: #727272;
               }
+
+              .bold {
+                font-weight: 700;
+                font-size: 1.5rem;
+              }
+            }
+          }
+          .social-media {
+            margin-top: 0.8rem;
+            i {
+              color: #01acee;
+              font-size: 2rem;
+            }
+          }
+        }
+        .card-body {
+          color: #727272;
+          margin-top: 0.8rem;
+        }
+        .card-footer {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 0.8rem;
+          .card-footer-left {
+            display: flex;
+            gap: 0.5rem;
+            p {
+              margin-top: 0;
+            }
+            i {
+              color: red;
+              font-weight: 600;
+              font-size: 1.5rem;
             }
           }
         }
