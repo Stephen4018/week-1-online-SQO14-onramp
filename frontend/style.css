@@ -4,9 +4,24 @@
 .hero-section .hero-section-inner {
   margin-inline: 5rem;
 }
+.hero-section .hero-section-inner .inner-section-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
 .hero-section .hero-section-inner .inner-section-cards .card-1 {
   background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
 }
 .hero-section .hero-section-inner .inner-section-cards .card-1 .card-head {
   display: flex;
+}
+.hero-section .hero-section-inner .inner-section-cards .card-1 .card-head .card-head-left .image {
+  width: 5rem;
+}
+.hero-section .hero-section-inner .inner-section-cards .card-1 .card-head .card-head-left .image img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
