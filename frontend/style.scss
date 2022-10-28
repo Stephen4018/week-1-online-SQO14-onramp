@@ -1,85 +1,133 @@
 body {
   font-family: "Poppins", sans-serif;
-}
 
-.hero-section {
-  background: rgb(215, 245, 245);
-  padding-block: 5rem;
-  .hero-section-inner {
-    margin-inline: 5rem;
+  .hero-section {
+    background: rgb(215, 245, 245);
+    padding-block: 5rem;
+    .hero-section-inner {
+      margin-inline: 5rem;
 
-    .hero-header {
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
+      .hero-header {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
 
-    .inner-section-cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 2rem;
-      .card-1 {
-        background: white;
-        padding: 1.5rem;
-        border-radius: 10px;
-        height: fit-content;
-        .card-head {
-          display: flex;
-          justify-content: space-between;
-          .card-head-left {
+      .inner-section-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        .card-1 {
+          background: white;
+          padding: 1.5rem;
+          border-radius: 10px;
+          height: fit-content;
+          .card-head {
             display: flex;
             justify-content: space-between;
-            gap: 1rem;
-            .image {
-              width: 4rem;
-              height: 4rem;
-              img {
-                border-radius: 50%;
-                width: 100%;
-                height: 100%;
+            .card-head-left {
+              display: flex;
+              justify-content: space-between;
+              gap: 1rem;
+              .image {
+                width: 4rem;
+                height: 4rem;
+                img {
+                  border-radius: 50%;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .card-name {
+                margin-top: -1rem;
+                .light {
+                  margin-top: -2rem;
+                  font-weight: 200;
+                  color: #727272;
+                }
+
+                .bold {
+                  font-weight: 700;
+                  font-size: 1.5rem;
+                }
               }
             }
-            .card-name {
-              margin-top: -1rem;
-              .light {
-                margin-top: -2rem;
-                font-weight: 200;
-                color: #727272;
+            .social-media {
+              margin-top: 0.8rem;
+              i {
+                color: #01acee;
+                font-size: 2rem;
               }
-
-              .bold {
-                font-weight: 700;
+            }
+          }
+          .card-body {
+            color: #727272;
+            margin-top: 0.8rem;
+          }
+          .card-footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.8rem;
+            .card-footer-left {
+              display: flex;
+              gap: 0.5rem;
+              p {
+                margin-top: 0;
+              }
+              i {
+                color: red;
+                font-weight: 600;
                 font-size: 1.5rem;
               }
             }
           }
-          .social-media {
-            margin-top: 0.8rem;
-            i {
-              color: #01acee;
-              font-size: 2rem;
-            }
-          }
         }
-        .card-body {
+      }
+    }
+  }
+
+  .page-body {
+    display: flex;
+
+    .page-body-inner {
+      margin: 0 auto;
+      //   border: 1px solid red;
+      width: 40%;
+      .top-section {
+        text-align: center;
+        h2 {
+          font-weight: 700;
+        }
+        p {
+          font-weight: 300;
           color: #727272;
-          margin-top: 0.8rem;
         }
-        .card-footer {
-          display: flex;
-          justify-content: space-between;
-          margin-top: 0.8rem;
-          .card-footer-left {
+      }
+
+      .page-contents {
+        border: 1px solid orange;
+        padding-inline: 1.5rem;
+        padding-block: 1.5rem;
+        .price-month {
+          .period {
+            color: #727272;
+          }
+          .amount {
             display: flex;
-            gap: 0.5rem;
-            p {
-              margin-top: 0;
+
+            .currency {
+              font-size: 2rem;
+              font-weight: 700;
             }
-            i {
-              color: red;
-              font-weight: 600;
-              font-size: 1.5rem;
+            .per-month {
+              color: #727272;
+              margin-top: 1rem;
             }
           }
+        }
+        .line {
+          height: 1px;
+          background: #727272;
+          margin-top: 1rem;
         }
       }
     }
