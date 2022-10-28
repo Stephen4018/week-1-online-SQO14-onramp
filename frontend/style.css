@@ -17,6 +17,16 @@ body .hero-section .hero-section-inner .inner-section-cards {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
 }
+@media screen and (max-width: 1200px) {
+  body .hero-section .hero-section-inner .inner-section-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 992px) {
+  body .hero-section .hero-section-inner .inner-section-cards {
+    grid-template-columns: 1fr;
+  }
+}
 body .hero-section .hero-section-inner .inner-section-cards .card-1 {
   background: white;
   padding: 1.5rem;
@@ -87,8 +97,18 @@ body .page-body {
   display: flex;
 }
 body .page-body .page-body-inner {
-  margin: 0 auto;
+  margin: 3rem auto;
   width: 40%;
+}
+@media screen and (max-width: 992px) {
+  body .page-body .page-body-inner {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 570px) {
+  body .page-body .page-body-inner {
+    width: 80%;
+  }
 }
 body .page-body .page-body-inner .top-section {
   text-align: center;
@@ -101,9 +121,11 @@ body .page-body .page-body-inner .top-section p {
   color: #727272;
 }
 body .page-body .page-body-inner .page-contents {
-  border: 1px solid orange;
+  border: 1.5px solid orange;
   padding-inline: 1.5rem;
   padding-block: 1.5rem;
+  border-radius: 10px;
+  background: #fbf8f3;
 }
 body .page-body .page-body-inner .page-contents .price-month .period {
   color: #727272;
@@ -112,15 +134,53 @@ body .page-body .page-body-inner .page-contents .price-month .amount {
   display: flex;
 }
 body .page-body .page-body-inner .page-contents .price-month .amount .currency {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 body .page-body .page-body-inner .page-contents .price-month .amount .per-month {
   color: #727272;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 body .page-body .page-body-inner .page-contents .line {
   height: 1px;
   background: #727272;
   margin-top: 1rem;
+}
+body .page-body .page-body-inner .page-contents .page-text .green {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #2ed8ae;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .page-body .page-body-inner .page-contents .page-text .text-1 {
+  display: flex;
+  gap: 2rem;
+}
+body .page-body .page-body-inner .page-contents .page-text .text-1 .desc {
+  color: #727272;
+}
+body .page-body .page-body-inner .page-contents button {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background: #01acee;
+  display: flex;
+  justify-content: center;
+  outline: none;
+  border: none;
+  align-items: center;
+  gap: 1rem;
+}
+body .page-body .page-body-inner .page-contents button i {
+  color: white;
+  font-size: 2rem;
+}
+body .page-body .page-body-inner .page-contents button p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

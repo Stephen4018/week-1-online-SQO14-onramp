@@ -16,6 +16,12 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
+        @media screen and (max-width: 1200px) {
+          grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: 992px) {
+          grid-template-columns: 1fr;
+        }
         .card-1 {
           background: white;
           padding: 1.5rem;
@@ -89,9 +95,15 @@ body {
     display: flex;
 
     .page-body-inner {
-      margin: 0 auto;
+      margin: 3rem auto;
       //   border: 1px solid red;
       width: 40%;
+      @media screen and (max-width: 992px) {
+        width: 70%;
+      }
+      @media screen and (max-width: 570px) {
+        width: 80%;
+      }
       .top-section {
         text-align: center;
         h2 {
@@ -104,9 +116,11 @@ body {
       }
 
       .page-contents {
-        border: 1px solid orange;
+        border: 1.5px solid orange;
         padding-inline: 1.5rem;
         padding-block: 1.5rem;
+        border-radius: 10px;
+        background: #fbf8f3;
         .price-month {
           .period {
             color: #727272;
@@ -115,12 +129,12 @@ body {
             display: flex;
 
             .currency {
-              font-size: 2rem;
+              font-size: 2.5rem;
               font-weight: 700;
             }
             .per-month {
               color: #727272;
-              margin-top: 1rem;
+              margin-top: 1.5rem;
             }
           }
         }
@@ -128,6 +142,46 @@ body {
           height: 1px;
           background: #727272;
           margin-top: 1rem;
+        }
+        .page-text {
+          .green {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background: #2ed8ae;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .text-1 {
+            display: flex;
+            gap: 2rem;
+            .desc {
+              color: #727272;
+            }
+          }
+        }
+        button {
+          width: 100%;
+          margin-top: 1rem;
+          border-radius: 10px;
+          background: #01acee;
+          display: flex;
+          justify-content: center;
+          outline: none;
+          border: none;
+          align-items: center;
+          gap: 1rem;
+          i {
+            color: white;
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1rem;
+            font-weight: 700;
+            color: white;
+          }
         }
       }
     }
