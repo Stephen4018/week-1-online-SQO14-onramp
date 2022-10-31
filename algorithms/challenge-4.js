@@ -1,7 +1,8 @@
 function calculateGrade(marks) {
   let sum = 0;
   let average;
-  for (let i = 0; i < marks.length; i++) {
+  let length = marks.length;
+  for (let i = 0; i < length; i++) {
     sum += marks[i];
     average = Math.round(sum / marks.length);
   }
@@ -19,5 +20,5 @@ function calculateGrade(marks) {
     return "F";
   }
 }
-calculateGrade();
+
 module.exports = calculateGrade;

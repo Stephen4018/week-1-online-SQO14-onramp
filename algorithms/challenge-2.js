@@ -9,6 +9,5 @@ function fizzBuzz(input) {
     return input;
   }
 }
-console.log(fizzBuzz(7));
 
 module.exports = fizzBuzz;

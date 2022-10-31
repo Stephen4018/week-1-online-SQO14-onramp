@@ -5,6 +5,5 @@ function sumMix(arr) {
   }
   return sum;
 }
-sumMix();
 
 module.exports = sumMix;

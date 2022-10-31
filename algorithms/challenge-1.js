@@ -6,5 +6,4 @@ function countTruthy(arr) {
   });
   return count.length;
 }
-console.log(countTruthy([0, 3, 14, ""]));
 module.exports = countTruthy;
