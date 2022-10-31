@@ -4,7 +4,7 @@ function countTruthy(arr) {
       return element;
     }
   });
-  return console.log(count.length);
+  return count.length;
 }
-countTruthy(["", 3, 0, 30, 7]);
+console.log(countTruthy([0, 3, 14, ""]));
 module.exports = countTruthy;
